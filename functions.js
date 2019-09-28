@@ -19,14 +19,39 @@ isToday('Saturday');
 
 //2). setup an empty array called fruits.
 //push several fruits into the array as long there are days of the week left.
-// use array.length i=-1 to get the full list of days of the week then push fruits with fruits.push ('Apple' + i)
 
-let fruits = [];
+const fruits = [];
 
+function addFruits() {
+    for (i = days_of_the_week.length - 1; i > -1; i--) {
+      fruits.push('Apple ' + i);
+    }
+    if (i != null)
+      console.log(fruits)
+  }
 
+addFruits()
 
 //setup another variable called favorite_fruit. check the fruits array to see if your favorite fruit is in it.
-//log the position of your favorite fruit in the fruit array.
+const favorite_fruit = [];
+favorite_fruit.push ('Apple 5');
+
+function checkFruits(fav){
+  for (let fruit of fruits) {
+    if (fav == fruit)
+      console.log(true);
+      else
+      console.log(false)
+
+ }
+} 
+
+ checkFruits('Apple 5')
+
+ //log the position of your favorite fruit in the fruit array.
+
+ let pos = fruits.indexOf('Apple 5');
+ console.log('The position of my favorite fruit, Apple 5, is: ' + pos);
 
 
 //You can do this Femi. We have gone over these principles. Take your time to go over. Hit me up if you have any questions.
