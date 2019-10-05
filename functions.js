@@ -26,7 +26,7 @@ function addFruits() {
     for (i = days_of_the_week.length - 1; i > -1; i--) {
       fruits.push('Apple ' + i);
     }
-    if (i != null)
+    if (i != -1)
       console.log(fruits)
   }
 
