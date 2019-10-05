@@ -22,4 +22,28 @@ function parkMyCar(car) {
     }
 
         parkMyCar("Danfo")
+        parkMyCar("Audi")
+        parkMyCar("Honda")
+        parkMyCar("Infinity")
+        parkMyCar("Fiat")
+        parkMyCar("Ford")
+        parkMyCar("Lincoln")
+        parkMyCar("BMW")
+        parkMyCar("Volkswagen")
+        parkMyCar("Toyota")
 
+
+// create function takeforSpin
+
+function takeforSpin(car){
+    let spin = parkCars.indexOf(car);
+    if (spin == -1){
+        console.log('Sorry you car was not parked in this garage')
+    }
+    else{
+        console.log('Your ' + car  + ' at ' + spin + ' has been taken for a spin');
+    }
+}
+takeforSpin('Audi')
+takeforSpin('Okada')
+      
